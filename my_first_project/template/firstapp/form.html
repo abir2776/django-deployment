@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h3>{{ heading }}</h3>
+        <form action="" method="post">
+            {{ user_form.as_p }}
+            {% csrf_token %}
+            <input type="submit" name="submit" value="SUBMIT">
+        </form>
+    </body>
+</html>
