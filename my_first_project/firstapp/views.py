@@ -1,7 +1,6 @@
 from django.forms import ValidationError
 from django.shortcuts import render
 from django.http import HttpResponse
-from matplotlib import artist
 from firstapp.models import musician,album
 from django.core import validators
 from firstapp import forms
